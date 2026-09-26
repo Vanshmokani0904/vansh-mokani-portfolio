@@ -19,6 +19,15 @@ Then open the local URL shown by Vite, usually:
 http://127.0.0.1:5173/
 ```
 
+## Portfolio Preview
+
+Full-page PDF snapshots of the portfolio in desktop and mobile responsive layouts.
+
+| Version | PDF |
+| --- | --- |
+| 🖥️ PC / Desktop | [View PC Portfolio PDF](./portfolio-PC.pdf) |
+| 📱 Mobile | [View Mobile Portfolio PDF](./portfolio-Mobile.pdf) |
+
 ## Features
 
 - Responsive layout for desktop, tablet, and mobile

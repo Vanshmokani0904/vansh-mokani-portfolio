@@ -249,6 +249,96 @@
 			],
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Set Git identity",
+			"type": "shell",
+			"command": "C:\\Program Files\\Git\\cmd\\git.exe",
+			"args": [
+				"-c",
+				"user.name=Vansh Mokani",
+				"-c",
+				"user.email=vanshmokani152@gmail.com",
+				"commit",
+				"-m",
+				"Create personal portfolio"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check commit status",
+			"type": "shell",
+			"command": "C:\\Program Files\\Git\\cmd\\git.exe",
+			"args": [
+				"status",
+				"--short"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Inspect Git history",
+			"type": "shell",
+			"command": "C:\\Program Files\\Git\\cmd\\git.exe",
+			"args": [
+				"log",
+				"--oneline",
+				"-3"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check Git remote",
+			"type": "shell",
+			"command": "C:\\Program Files\\Git\\cmd\\git.exe",
+			"args": [
+				"remote",
+				"-v"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Push portfolio to GitHub",
+			"type": "shell",
+			"command": "C:\\Program Files\\Git\\cmd\\git.exe",
+			"args": [
+				"push",
+				"-u",
+				"origin",
+				"main"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Correct GitHub repository remote",
+			"type": "shell",
+			"command": "C:\\Program Files\\Git\\cmd\\git.exe",
+			"args": [
+				"remote",
+				"set-url",
+				"origin",
+				"https://github.com/Vanshmokani0904/vansh-mokani-portfolio.git"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check target GitHub repository",
+			"type": "shell",
+			"command": "C:\\Program Files\\GitHub CLI\\gh.exe",
+			"args": [
+				"repo",
+				"view",
+				"Vanshmokani0904/vansh-mokani-portfolio",
+				"--json",
+				"nameWithOwner,url"
+			],
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }
