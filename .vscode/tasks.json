@@ -156,6 +156,99 @@
 			],
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Check GitHub login",
+			"type": "shell",
+			"command": "C:\\Program Files\\GitHub CLI\\gh.exe",
+			"args": [
+				"auth",
+				"status"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Inspect Git repository",
+			"type": "shell",
+			"command": "C:\\Program Files\\Git\\cmd\\git.exe",
+			"args": [
+				"status",
+				"--short"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Sign in to GitHub",
+			"type": "shell",
+			"command": "C:\\Program Files\\GitHub CLI\\gh.exe",
+			"args": [
+				"auth",
+				"login",
+				"--hostname",
+				"github.com",
+				"--git-protocol",
+				"https",
+				"--web"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Verify GitHub authentication",
+			"type": "shell",
+			"command": "C:\\Program Files\\GitHub CLI\\gh.exe",
+			"args": [
+				"auth",
+				"status"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Confirm GitHub authentication",
+			"type": "shell",
+			"command": "C:\\Program Files\\GitHub CLI\\gh.exe",
+			"args": [
+				"auth",
+				"status"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check Git identity",
+			"type": "shell",
+			"command": "C:\\Program Files\\Git\\cmd\\git.exe",
+			"args": [
+				"config",
+				"--global",
+				"--get-regexp",
+				"user\\.(name|email)"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Create portfolio Git commit",
+			"type": "shell",
+			"command": "C:\\Program Files\\Git\\cmd\\git.exe",
+			"args": [
+				"add",
+				".vscode/tasks.json",
+				".gitignore",
+				"README.md",
+				"docs",
+				"index.html",
+				"package-lock.json",
+				"package.json",
+				"public",
+				"script.js",
+				"styles.css"
+			],
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }
